@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+html{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+body{
+    
+    font-family:"Plus Jakarta Sans";  
+    background-color:white;
+}
+.main{
+    margin-top:16px;
+    
+}
+header, footer{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.logo{
+    font-size:28px;
+}
+
+h1{
+    font-weight:800;
+}
+
+#firstsection{
+    margin-right:16px;
+    padding-left:16px;
+}
+
+#firstsection p{
+    font-weight:500;
+    color: #83869A;
+    line-height: 26px;
+    margin-top:26px;
+    font-size:16px;
+
+}
+
+.getstarted{
+    font-size:16px;
+    font-weight:700;
+    color:white;
+    font-family:"Plus Jakarta Sans";
+    width:140px;
+    height:48px;
+    border-radius:28px;
+    background-color: #13183F;
+    border:0px;
+}
+
+#htext{
+    margin-top:45px;
+    font-size:40px;
+    line-height:50.4px;
+}
+
+#firstbutton{
+    margin-left:114px;
+    width:140px;
+    height:48px;
+}
+
+.heroimage{
+    height:370px;
+    background-image:url("images/image-hero-mobile.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    margin-top:46px;
+}
+
+#secondbutton{
+    width:167px;
+    height:56px;
+    margin-top:24px;
+    background:linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border: 0px;
+}
+
+#popularcourses{
+    align-content: center;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius:10px;
+    padding-bottom:16px;
+}
+
+#popularcourses h2{
+    margin-top:24px;
+    margin-left:28px;
+    color:white;
+    font-size:24px;
+    font-weight:800;
+    line-height: 32px;
+}
+
+#secondsection{
+    padding-left:16px;
+    padding-right:16px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    padding-bottom:80px;
+}
+
+.card-container{
+    display:grid;
+    gap:40px;
+}
+.card{ 
+    background:white;
+    height:259px;
+    border-radius:10px;
+    position:relative;
+}
+
+.card h4{
+    padding-top:56px;
+    margin-left:28px;
+    font-family:"Plus Jakarta Sans";
+    font-weight:800;
+    font-size:20px;
+}
+
+.card p{
+    margin-left:28px;
+    margin-top:16px;
+    line-height: 26px;
+    font-family:"Plus Jakarta Sans";
+    font-weight:500;
+    font-size:16px;
+    color:#83869A
+
+}
+
+.card a{
+    padding-top:32px;
+    margin-left:28px;
+    font-family:"Plus Jakarta Sans";
+    text-decoration: none;
+    position:absolute;
+    color:#F74780;
+    font-size:18px;
+    font-weight:700;
+}
+
+#animationpic{  
+    position:absolute;
+    top:-10%;
+    margin-left:16px;
+
+}
+
+footer {
+    padding:32px 16px 32px 16px;
+    background-color:#13183F;
+}
+
+footer h1{
+    color:white;
+}
+footer button{
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    border:none;
+    
+}
+#firstbutton:hover{
+    background:#666CA3;
+}
+
+#secondbutton:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+footer button:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+.card a:hover{
+    color:#FFA7C3;
+}
+
+@media only screen and (min-width: 768px){
+
+    .heroimage{
+        display: none;
+    }
+   
+    .main{
+        margin-top:31px;
+        background-image: url("images/image-hero-tablet.png");
+        background-repeat: no-repeat;
+        background-position-x: calc(100% + 270px);
+        background-position-y: -92px;
+    }
+
+    header{
+        margin-top:31px;
+    }
+
+    #htext{
+        width:326px;
+        margin-top:105px;
+    }
+
+    #firstsection{
+        margin-right:40px;
+        padding-left:40px;
+    }
+
+    #first p{
+        width:398px;
+    }
+
+    .textandphotocontent{
+        background-image:none;
+    }
+
+    .textcontent{
+        width:400px;     
+    }
+    #secondsection{
+        padding-left:40px;
+        padding-right:40px;
+    }
+
+    .card-container{
+        margin:210px 0px 86px 0px;
+        grid-template-columns: repeat(2, 1fr); 
+        column-gap:10px;
+        row-gap:56px;
+
+    }
+
+    #popularcourses h2{
+        margin-top:56px;
+    }
+
+    .card p{
+        height:78px;
+    }
+    footer{
+        padding-left:40px;
+        padding-right:40px;
+    }
+    
+    @media only screen and (min-width: 1440px){
+
+        body{
+            width:100%;
+            background-image: url(images/image-hero-desktop.png);
+            background-repeat: no-repeat;
+            background-position-x: calc(100% + 350px);
+            background-position-y: -167px;
+
+        }
+        .main{
+            background-image:none;  
+        }
+
+        #firstsection{
+            margin-right:165px;
+            padding-left:165px;
+        }
+        .textcontent{
+            width:px;             
+        }
+        #htext{
+            width:457px;
+            font-size:56px;
+            margin-top:178px;
+        }
+        #firstsection p{
+            font-size:18px;
+        }
+        #secondsection{
+            padding-left:165px;
+            padding-right:165px;
+            
+        }
+        .card-container{
+            grid-template-columns: repeat(3, 1fr);
+            margin-top:250px;
+            margin-bottom:140px;
+            column-gap:30px;
+            row-gap: 80px;
+        }
+
+        .card{
+            height:322px;
+        }
+
+        #popularcourses{
+            font-size:32px;
+            line-height:40px;
+        }
+
+        #popularcourses h2{
+            max-width:228px;
+            margin-top:64px;
+        }
+        
+        .card h4{
+            padding-top:64px;
+            margin-left:32px;
+            font-size:24px;
+        }
+        
+        .card p{
+            height:112px;
+            max-width:286px;
+            margin-left:32px;
+            margin-top:24px;
+            line-height: 28px;
+            font-size:18px;   
+        }
+        
+        .card a{
+            margin-left:32px;
+            font-size:18px;
+            font-weight:700;
+        }
+
+        #getstarted{
+            font-size:18px;
+        }
+
+        .logo{
+            font-size:36px;
+        }
+
+        .getstarted{
+            font-size:18px;
+        }
+
+        footer{
+            padding-left:165px;
+            padding-right:165px;
+        }
+    }
+}
