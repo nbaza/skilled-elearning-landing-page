@@ -148,7 +148,7 @@ h1{
     font-weight:700;
 }
 
-#animationpic{  
+.animationpic{  
     position:absolute;
     top:-10%;
     margin-left:16px;
@@ -266,9 +266,7 @@ footer button:hover{
             margin-right:165px;
             padding-left:165px;
         }
-        .textcontent{
-            width:px;             
-        }
+        
         #htext{
             width:457px;
             font-size:56px;
